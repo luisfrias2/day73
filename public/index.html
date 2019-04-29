@@ -61,11 +61,11 @@
     }
 
     let questions = [];
-    questions.push(makeQ("2^3", "8", 1));
-    questions.push(makeQ("\\dfrac{1}{2}", ".5", 1));
-    questions.push(makeQ("\\dfrac{1}{2}", ".5", 1));
-    questions.push(makeQ("\\sqrt{16}", "4", 1));
-    questions.push(makeQ("Find the perimeter", "4", 1,"q1.png"));
+    // questions.push(makeQ("2^3", "8", 1));
+    // questions.push(makeQ("\\dfrac{1}{2}", ".5", 1));
+    // questions.push(makeQ("\\dfrac{1}{2}", ".5", 1));
+    // questions.push(makeQ("\\sqrt{16}", "4", 1));
+    // questions.push(makeQ("Find the perimeter", "4", 1,"q1.png"));
 
 
     function makeTest(e) {
@@ -90,6 +90,17 @@
     makeTest();
 
     $("input").change(checkAnswer);
+
+    $.getJSON('json', function (result){
+    	console.log(result);
+    	$.each(result,function(i,field){
+    		console.log(i,field);
+    		questions.push(makeQ(field.q,field.a,field.level));
+    	})
+    })
+
+    makeTest();
+
 
     function checkAnswer(e) {
         correct = $(this).data("answer");
