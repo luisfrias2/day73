@@ -1,0 +1,25 @@
+{
+  "name": "day73",
+  "version": "0.0.1",
+  "description": "Math Placement Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisfrias2/day73.git"
+  },
+  "keywords": [
+    "math",
+    "placement",
+    "googlesheets"
+  ],
+  "author": "Luis Frias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisfrias2/day73/issues"
+  },
+  "homepage": "https://github.com/luisfrias2/day73#readme"
+}
