@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/luisfrias2/day73/issues"
   },
-  "homepage": "https://github.com/luisfrias2/day73#readme"
+  "homepage": "https://github.com/luisfrias2/day73#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "google-spreadsheet-to-json": "^1.0.0"
+  }
 }
